@@ -28,7 +28,7 @@
     "@wdio/mocha-framework": "^6.10.6",
     "@wdio/sync": "^6.10.7",
     "allure-commandline": "^2.13.0",
-    "chromedriver": "^87.0.4",
+    "chromedriver": "^83",
     "del-cli": "^3.0.1",
     "local": "^0.3.3",
     "wdio-chromedriver-service": "^6.0.4"
