@@ -4,7 +4,10 @@
   "description": "pusakatest is an automation testing tool",
   "main": "index.js",
   "scripts": {
-    "test": "npx wdio wdio.conf.js",
+    "test-web": "npx wdio web.wdio.conf.js",
+    "test-android": "npx wdio android.wdio.conf.js",
+    "dev-web": "npx wdio web.wdio.conf.js",
+    "dev-android": "npx wdio android.wdio.conf.js",
     "report": "allure generate ./allure-results --clean && allure open",
     "clean-report": "del-cli allure-results && del-cli allure-report && del-cli *.xml"
   },
