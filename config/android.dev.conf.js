@@ -1,8 +1,7 @@
 // use yours
-const packageName = 'package.android.name'
-const deviceName = 'device.android.name'
-const avdName = 'avd.android.name'
-const appPath = 'apk.android.location'
+const packageName = 'com.wdiodemoapp'
+const deviceName = 'YT89EAPJSOSON7DE'
+const appPath = './config/Android-NativeDemoApp-0.2.1.apk'
 
 exports.config = {
     //
@@ -60,7 +59,6 @@ exports.config = {
             appWaitActivity: `${packageName}`,
             automationName: 'UiAutomator2',
             deviceName: `${deviceName}`,
-            avd: `${avdName}`,
             app: `${appPath}`,
             autoGrantPermissions: true
         }
