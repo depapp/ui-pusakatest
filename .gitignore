@@ -159,6 +159,6 @@ allure-report/
 /web.dev.conf.js
 
 ### app file ###
-*.apk
+/*.apk
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,vscode,node
