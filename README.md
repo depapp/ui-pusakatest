@@ -25,10 +25,23 @@ $ npm install
 
 ## usage
 
-```python
-import foobar
+there are 2 platforms that can be executed by this tool, `web` & `android`
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+first thing first, you need to `copy` all files on `config` directory to your `pusakatest` root directory
+
+- then you can run this command to run the `web` automation
+```bash
+$ npm run dev-web
+```
+
+## reporting
+
+you have to make sure that `allure` is installed on your machine
+```bash
+$ allure --version
+2.13.7
+```
+this command will show you the report of your latest execution
+```bash
+$ npm run report
 ```
