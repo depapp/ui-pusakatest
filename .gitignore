@@ -154,4 +154,11 @@ dist
 allure-results/
 allure-report/
 
+### config files ###
+/android.dev.conf.js
+/web.dev.conf.js
+
+### app file ###
+/*.apk
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,vscode,node
