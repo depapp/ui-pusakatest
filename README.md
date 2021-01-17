@@ -3,7 +3,7 @@
 
 pusakatest is an automation testing tool
 
-## installation
+## :gear: installation
 
 make sure `node` & `npm` already installed on your machine using these commands
 ```bash
@@ -23,7 +23,7 @@ then install the dependencies (change your directory first to `pusakatest` ~~_do
 $ npm install
 ```
 
-## usage
+## :bulb: usage
 
 there are 2 platforms that can be executed by this tool, `web` & `android`
 
@@ -44,7 +44,7 @@ after that, you can run
 $ npm run dev-android
 ```
 
-## reporting
+## :memo: reporting
 
 you have to make sure that `allure` is installed on your machine
 ```bash
