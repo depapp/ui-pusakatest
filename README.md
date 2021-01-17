@@ -33,6 +33,16 @@ first thing first, you need to `copy` all files on `config` directory to your `p
 ```bash
 $ npm run dev-web
 ```
+- if you're going to run the `android` automation, you have to start the `appium` first and make sure there is connected Android device on your local machine
+```bash
+$ appium
+[Appium] Welcome to Appium v1.20.1
+[Appium] Appium REST http interface listener started on 0.0.0.0:4723
+```
+after that, you can run
+```bash
+$ npm run dev-android
+```
 
 ## reporting
 
