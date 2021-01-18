@@ -1,9 +1,11 @@
+const selectors = {
+    title: '.product_label'
+}
+
 class HomePage {
 
-    get title() { return $('.product_label') }
-
     verify() {
-        this.title.isDisplayed()
+        $(selectors.title).isDisplayed()
     }
 
 }

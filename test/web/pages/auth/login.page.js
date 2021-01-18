@@ -1,19 +1,21 @@
 const Page = require('../common/page')
 
-class LoginPage extends Page {
+const selectors = {
+    inputUsername: '#user-name',
+    inputPassword: '#password',
+    buttonSubmit: '#login-button'
+}
 
-    get inputUsername() { return $('#user-name') }
-    get inputPassword() { return $('#password') }
-    get btnSubmit() { return $('#login-button') }
+class LoginPage extends Page {
 
     open() {
         return super.open()
     }
 
     login (username, password) {
-        this.inputUsername.setValue(username)
-        this.inputPassword.setValue(password)
-        this.btnSubmit.click()
+        $(selectors.inputUsername).setValue(username)
+        $(selectors.inputPassword).setValue(password)
+        $(selectors.buttonSubmit).click()
     }
     
 }
