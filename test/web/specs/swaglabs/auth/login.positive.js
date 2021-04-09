@@ -1,5 +1,5 @@
-const LoginPage = require('../../pages/auth/login.page')
-const HomePage = require('../../pages/home/home.page')
+const LoginPage = require('../../../pages/swaglabs/auth/login.page')
+const HomePage = require('../../../pages/swaglabs/home/home.page')
 
 describe('login', () => {
 
