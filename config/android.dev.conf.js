@@ -1,7 +1,7 @@
 // use yours
 const packageName = 'com.wdiodemoapp'
-const deviceName = 'YT89EAPJSOSON7DE'
-const appPath = './config/Android-NativeDemoApp-0.2.1.apk'
+const deviceName = 'YT89EAPJSOSON7DE' //e.g.: '192.168.1.5:5555'
+const appPath = './config/Android-NativeDemoApp-0.2.1.apk' //e.g.: 'C:\\Users\\Blablabla\\pusakatest\\config\\Android-NativeDemoApp-0.2.1.apk'
 
 exports.config = {
     //
@@ -56,7 +56,7 @@ exports.config = {
             platformName: 'Android',
             maxInstances: 1,
             fullReset: true,
-            appWaitActivity: `${packageName}`,
+            appPackage: `${packageName}`,
             automationName: 'UiAutomator2',
             deviceName: `${deviceName}`,
             app: `${appPath}`,
