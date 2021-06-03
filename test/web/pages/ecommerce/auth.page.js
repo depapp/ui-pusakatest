@@ -18,7 +18,8 @@ const selector = {
     stateField: '#id_state',
     zipField: '#postcode',
     phoneField: '#phone_mobile',
-    submitButton: '#submitAccount'
+    submitButton: '#submitAccount',
+    test: 'test'
 }
 
 class AuthPage {
