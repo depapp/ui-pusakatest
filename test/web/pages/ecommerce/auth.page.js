@@ -1,3 +1,5 @@
+const allureReporter = require('@wdio/allure-reporter').default
+
 const selector = {
     emailField: '#email',
     passwordField: '#passwd',
@@ -24,15 +26,18 @@ const selector = {
 class AuthPage {
 
     open() {
+        allureReporter.addStep('open `login` page')
         return browser.url('http://automationpractice.com/index.php?controller=authentication&back=my-account')
     }
 
     register(email) {
+        allureReporter.addStep('fill `register` field')
         $(selector.registerEmailField).setValue(email)
         $(selector.registerButton).click()
     }
 
     registerForm(firstName, lastName, password, company, address, city, state, zip, phone) {
+        allureReporter.addStep('fill all `register` fields')
         $(selector.genderRadio).click()
         $(selector.firstNameField).setValue(firstName)
         $(selector.lastNameField).setValue(lastName)
@@ -47,12 +52,14 @@ class AuthPage {
     }
 
     login(username, password) {
+        allureReporter.addStep('login')
         $(selector.emailField).setValue(username)
         $(selector.passwordField).setValue(password)
         $(selector.loginButton).click()
     }
 
     verifyAccount(fullname) {
+        allureReporter.addStep('verify `account` page')
         $(selector.accountPage).isDisplayed()
         $(selector.fullName).isEqual(fullname)
     }
