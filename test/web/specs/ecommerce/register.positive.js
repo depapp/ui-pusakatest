@@ -1,9 +1,9 @@
 const AuthPage = require('../../pages/ecommerce/auth.page')
 const Chance = require('chance')
 
-describe('register', () => {
+describe('ecommerce', () => {
 
-    it('using valid credentials', () => {
+    it('register using valid credentials', () => {
         const chance = new Chance()
         const firstName = chance.first()
         const lastName = chance.last()

@@ -1,3 +1,5 @@
+const allureReporter = require('@wdio/allure-reporter').default
+
 class LoginPage {
 
     //add your element here
@@ -7,11 +9,13 @@ class LoginPage {
     get btnSubmit () { return $('//*[@text="LOGIN"]') }
 
     open () {
+        allureReporter.addStep('open `login` page')
         this.goToLogin.click()
     }
 
     login (username, password) {
         //add your test here
+        allureReporter.addStep('login')
         this.inputEmail.setValue(username)
         this.inputPassword.setValue(password)
         this.btnSubmit.click()

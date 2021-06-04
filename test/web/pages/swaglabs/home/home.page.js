@@ -1,3 +1,5 @@
+const allureReporter = require('@wdio/allure-reporter').default
+
 const selectors = {
     title: '.product_label'
 }
@@ -5,6 +7,7 @@ const selectors = {
 class HomePage {
 
     verify() {
+        allureReporter.addStep('verify `home` page')
         $(selectors.title).isDisplayed()
     }
 
