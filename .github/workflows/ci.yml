@@ -18,7 +18,7 @@ jobs:
 
     steps:
     - name: checkout
-    - uses: actions/checkout@v2
+      uses: actions/checkout@v2
 
     - name: use node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
@@ -26,24 +26,24 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: cache npm
-        id: cache-npm
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: npm-${{ runner.OS }}-node_modules-${{ hashFiles('**/package-lock.json') }}
+      id: cache-npm
+      uses: actions/cache@v2
+      with:
+        path: ~/.npm
+        key: npm-${{ runner.OS }}-node_modules-${{ hashFiles('**/package-lock.json') }}
 
-      - name: cache node modules
-        id: cache-nodemodules
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: node_modules-${{ runner.OS }}-node_modules-${{ hashFiles('**/package-lock.json') }}
+    - name: cache node modules
+      id: cache-nodemodules
+      uses: actions/cache@v2
+      with:
+        path: node_modules
+        key: node_modules-${{ runner.OS }}-node_modules-${{ hashFiles('**/package-lock.json') }}
 
     - name: install dependencies
-    - run: npm install
+      run: npm install
 
     - name: chrome version
-    - run: google-chrome --version
+      run: google-chrome --version
 
     - name: test
-    - run: npm run test-web
+      run: npm run test-web
