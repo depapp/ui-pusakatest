@@ -26,14 +26,12 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: cache npm
-      id: cache-npm
       uses: actions/cache@v2
       with:
         path: ~/.npm
         key: npm-${{ runner.OS }}-node_modules-${{ hashFiles('**/package-lock.json') }}
 
     - name: cache node modules
-      id: cache-nodemodules
       uses: actions/cache@v2
       with:
         path: node_modules
