@@ -1,6 +1,6 @@
 # pusakatest
 [![pusakatest-ci](https://github.com/depapp/pusakatest/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/depapp/pusakatest/actions/workflows/ci.yml)
-[![Build Status](https://travis-ci.com/depapp/pusakatest.svg?branch=main)](https://travis-ci.com/depapp/pusakatest)
+[![Build Status](https://app.travis-ci.com/depapp/pusakatest.svg?branch=main)](https://app.travis-ci.com/depapp/pusakatest)
 
 pusakatest is an automation testing tool
 
